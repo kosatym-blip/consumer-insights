@@ -55,3 +55,28 @@
 /* phrase bank items become real links */
 a.phrase { text-decoration: none; display: block; }
 a.phrase:hover { transform: translateY(-2px); }
+
+/* e-commerce panel: prices / demand / competitors table */
+.ec-table-wrap { padding: 8px; overflow-x: auto; }
+.ec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: var(--text-primary, #f4f1ff);
+}
+.ec-table th, .ec-table td {
+  padding: 11px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  vertical-align: top;
+}
+.ec-table thead th {
+  font-size: 12px; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--text-secondary); font-weight: 600;
+  border-bottom: 1px solid rgba(139,120,240,.3);
+}
+.ec-table tbody tr:last-child td { border-bottom: none; }
+.ec-table tbody tr:hover { background: rgba(139,120,240,.06); }
+.ec-table .ec-num { text-align: right; white-space: nowrap; }
+.ec-table .ec-name a { color: var(--text-primary, #e8e3ff); text-decoration: none; }
+.ec-table .ec-name a:hover { color: var(--accent, #b9a9ff); text-decoration: underline; }
